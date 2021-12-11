@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+<<<<<<< HEAD
     background: black;
+=======
+    background-color:black;
+    margin: 0px;
+>>>>>>> 55294b8871ac2c839f7ef61dcb60e5611ddca720
 }
