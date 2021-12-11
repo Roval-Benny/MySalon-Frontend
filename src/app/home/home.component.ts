@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  n:Array<number> = [1,2,3];
   ngOnInit(): void {
   }
 
