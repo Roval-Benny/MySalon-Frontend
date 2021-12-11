@@ -1,4 +1,4 @@
-<div class="container" style="background-color:black;color: aliceblue;margin: 0px;padding: 0%;width: 100%;">
+<div class="container salon-body">
     <div class='row'>
         <div class="col-12 col-md-4 order-md-last" style="padding: 0%;">
             <img src="./assets/img/salon1.jpg" width="100%"  alt="" srcset="">
@@ -14,26 +14,101 @@
             </h6>
         </div>
     </div>
-    <ul class="nav nav-pills sm-12" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-men-tab" data-bs-toggle="pill" data-bs-target="#pills-men" type="button" role="tab" aria-controls="pills-men" aria-selected="true">Men</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-women-tab" data-bs-toggle="pill" data-bs-target="#pills-women" type="button" role="tab" aria-controls="pills-women" aria-selected="false">Women</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-boy-tab" data-bs-toggle="pill" data-bs-target="#pills-boy" type="button" role="tab" aria-controls="pills-boy" aria-selected="false">Boy</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-girl-tab" data-bs-toggle="pill" data-bs-target="#pills-girl" type="button" role="tab" aria-controls="pills-girl" aria-selected="false">Girl</button>
-          </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
-            
-        </div>
-        <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">...</div>
-        <div class="tab-pane fade" id="pills-boy" role="tabpanel" aria-labelledby="pills-boy-tab">...</div>
-        <div class="tab-pane fade" id="pills-girl" role="tabpanel" aria-labelledby="pills-girl-tab">...</div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-men-tab" data-bs-toggle="pill" data-bs-target="#pills-men" type="button" role="tab" aria-controls="pills-men" aria-selected="true">Men</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-women-tab" data-bs-toggle="pill" data-bs-target="#pills-women" type="button" role="tab" aria-controls="pills-women" aria-selected="false">Women</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-boy-tab" data-bs-toggle="pill" data-bs-target="#pills-boy" type="button" role="tab" aria-controls="pills-boy" aria-selected="false">Boy</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-girl-tab" data-bs-toggle="pill" data-bs-target="#pills-girl" type="button" role="tab" aria-controls="pills-girl" aria-selected="false">Girl</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
+        <span>
+          <div class="colContainer" >
+            <div class="card col" *ngFor="let i of n">
+              <img class="card-img-top" src="./assets/img/salon2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hair Cut</h5>
+                <p class="card-text">Hair cut in any style</p>
+                <div style="display: flex;justify-content: space-around;">
+                  <p class="card-text" style="color: red;">Price:- 250/-</p>
+                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                </div>
+                <button class="btn btn-primary">
+                  Add Service
+                </button>
+              </div>
+            </div>
+          </div>
+        </span>
+        
       </div>
+      <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
+        <span>
+          <div class="colContainer" >
+            <div class="card col" *ngFor="let i of n">
+              <img class="card-img-top" src="./assets/img/salon3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hair Cut</h5>
+                <p class="card-text">Hair cut in any style</p>
+                <div style="display: flex;justify-content: space-around;">
+                  <p class="card-text" style="color: red;">Price:- 250/-</p>
+                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                </div>
+                <button class="btn btn-primary">
+                  Add Service
+                </button>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="tab-pane fade" id="pills-boy" role="tabpanel" aria-labelledby="pills-boy-tab">
+        <span>
+          <div class="colContainer" >
+            <div class="card col" *ngFor="let i of n">
+              <img class="card-img-top" src="./assets/img/salon4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hair Cut</h5>
+                <p class="card-text">Hair cut in any style</p>
+                <div style="display: flex;justify-content: space-around;">
+                  <p class="card-text" style="color: red;">Price:- 250/-</p>
+                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                </div>
+                <button class="btn btn-primary">
+                  Add Service
+                </button>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="tab-pane fade" id="pills-girl" role="tabpanel" aria-labelledby="pills-girl-tab">
+        <span>
+          <div class="colContainer" >
+            <div class="card col" *ngFor="let i of n">
+              <img class="card-img-top" src="./assets/img/salon1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hair Cut</h5>
+                <p class="card-text">Hair cut in any style</p>
+                <div style="display: flex;justify-content: space-around;">
+                  <p class="card-text" style="color: red;">Price:- 250/-</p>
+                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                </div>
+                <button class="btn btn-primary">
+                  Add Service
+                </button>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
 </div>
