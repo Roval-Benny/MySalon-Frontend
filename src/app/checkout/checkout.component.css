@@ -1,0 +1,30 @@
+
+#checkout-btn{
+background: black;
+border-color: #EC255A;
+margin-top: 22%;
+
+}
+
+#card-style{
+    border-color: #605959;
+    background: black;
+    margin-left: 14%;
+    padding: 1%;
+
+
+}
+h5{
+    color: white;
+}
+p{
+    color:white;
+}
+
+h1{
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-size: 28px;
+
+}
