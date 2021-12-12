@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 5%;">
-    <a class="navbar-brand" href="#" (click)="onHome()">
+    <a class="navbar-brand" (click)="onHome()">
         <img src="./assets/img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
         MySalon</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link active"  (click)="onProfile()">
-                    Profile
+                Profile
             </a>
           </li>
           <li class="nav-item">
@@ -28,11 +28,12 @@
                     Location
             </a>
           </li>
+          <div class="Login">
           <li class="nav-item ">
             <a class="nav-link active" (click)="onLogin()" style="background-color: rgb(76, 76, 131); color: aliceblue;">
                     Login
             </a>
-          </li>
+          </li></div>
       </ul>
     </div>
-  </nav>
+</nav>
