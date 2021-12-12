@@ -1,0 +1,35 @@
+.section1-flex{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.Admin-header{
+text-align: center;
+color: burlywood;
+text-decoration: underline;
+}
+.sub-section2{
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+.sub-section1{
+    display: flex;
+}
+.form-switch{
+    margin-left: 30px;
+}
+.service{
+    border: 1px solid #d4ead5;
+    padding: 10px;
+}
+.service-header{
+    color:palevioletred;
+    text-decoration: underline;
+}
+.Appointment-header{
+    text-align: center;
+    color: peru;
+}
