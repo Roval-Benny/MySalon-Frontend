@@ -1,0 +1,96 @@
+<div class="Admin-header">
+  <h1>Tony&Guy Admin Panel</h1>
+</div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service" type="button" role="tab" aria-controls="service" aria-selected="true">Service</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="appointment-tab" data-bs-toggle="tab" data-bs-target="#appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false">Appointment</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="false">History</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="service" role="tabpanel" aria-labelledby="service-tab">
+     
+      <div class="section1-flex">
+        <div class="sub-section1">
+      <ejs-calendar id=calendar [values]='value' [isMultiSelection]='multiSelect'  > </ejs-calendar >
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault" style="color:palevioletred;">Turn the site ON/OFF</label>
+        </div>
+      </div>
+     
+      <span class="border">
+        <div class="sub-section2">
+          <div class="service-header">
+            <h3>Services</h3>
+          </div>
+          <div class="service">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault" style="color: tomato;">Hair Cutting</label>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label" style="color: white;">Price</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label" style="color: white;">Offer%</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+              </form>
+            </div>
+        </div>
+        <div class="service">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault" style="color: tomato;">Hair Coloring</label>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label" style="color: white;">Price</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label" style="color: white;">Offer%</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="service">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault" style="color: tomato;">Facial Treatment</label>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label" style="color: white;">Price</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label" style="color: white;">Offer%</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </span>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="appointment" role="tabpanel" aria-labelledby="appointment-tab">
+      <div class="Appointment-header">
+        <h3>Appointment Schedule</h3>
+      </div>
+      <span class="border">
+        <div class="Inc-Appointment">
+          hkejkjed
+        </div>
+      </span>
+
+    </div>
+    <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">...</div>
+  </div>
