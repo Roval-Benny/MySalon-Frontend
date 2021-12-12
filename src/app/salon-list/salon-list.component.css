@@ -1,0 +1,40 @@
+  .header1{
+    color: white;
+    text-decoration-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 200%;
+
+  }
+  .col {
+    color: black;
+    margin:15px;
+    float: left;
+    width: 10%;
+    padding: 10px;
+ }
+ .colContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ .card-text{
+     font-size: 13px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-style: italic;
+ }
+ @media screen and (min-width:600px ) {
+    .col {
+        width: 40%;
+    }
+ }
+ @media screen and (min-width: 900px) {
+    .col {
+       width: 30%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .col {
+       width: 100%;
+    }
+ }
