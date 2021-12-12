@@ -23,7 +23,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link active" href="#">
+            <a routerLink ="/registration" class="nav-link active" href="#">
                 <button class="btn btn-outline-primary">
                     Profile
                 </button>
@@ -36,13 +36,16 @@
                 </button>
             </a>
           </li>
+          <div class="Login">
           <li class="nav-item ">
             <a class="nav-link active" href="#">
                 <button class="btn btn-primary">
-                    Login
+                  <a routerLink="/login" style="color: azure;">Login</a>  
                 </button>
             </a>
-          </li>
+          </li></div>
       </ul>
     </div>
   </nav>
+
+  <app-salon-detail></app-salon-detail>
