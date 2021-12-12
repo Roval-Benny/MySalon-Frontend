@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterService } from '../services/router.service';
 
 @Component({
   selector: 'app-otp',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OtpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rs:RouterService) { }
 
   ngOnInit(): void {
   }
-  
-
+  onSign(){
+    this.rs.routeToHome();
+  }
 }

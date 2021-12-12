@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 
 
@@ -20,6 +19,8 @@ import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AdminSectionComponent } from './admin-section/admin-section.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+
 
 
 @NgModule({

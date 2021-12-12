@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RouterService } from '../services/router.service';
 
 @Component({
   selector: 'app-salon-list',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalonListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private as: ActivatedRoute,private rs:RouterService) { }
+  n:Array<number> = [1,2,3];
   ngOnInit(): void {
+    var id = this.as.snapshot.paramMap.get('id');
+    alert(id);
   }
-
+  onSalon(id:number){
+    this.rs.routeToSalonDetail(id);
+  }
+  
 }
