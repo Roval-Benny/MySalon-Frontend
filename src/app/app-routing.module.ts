@@ -10,6 +10,7 @@ import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SalonDetailComponent } from './salon-detail/salon-detail.component';
 import { SalonListComponent } from './salon-list/salon-list.component';
+import { UserAppointmentsComponent } from './user-appointments/user-appointments.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'salon-list/:id', component: SalonListComponent },
   { path: 'salon-detail/:id', component: SalonDetailComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'user-appointments', component: UserAppointmentsComponent },
   { path: 'checkout/:userId', component: CheckoutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'otp', component: OtpComponent },

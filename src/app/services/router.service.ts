@@ -8,7 +8,7 @@ export class RouterService {
   constructor(private router:Router) { }
 
   routeToAppointment(){
-    this.router.navigate(['/appointment']);
+    this.router.navigate(['/user-appointments']);
   }
 
   routeToHome(){
