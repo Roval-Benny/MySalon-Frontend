@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Salon } from '../model/salon';
+import { Service } from '../model/service';
+import { DataService } from '../services/data.service';
 import { RouterService } from '../services/router.service';
 
 @Component({
@@ -8,8 +11,23 @@ import { RouterService } from '../services/router.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private rs:RouterService) { }
   n:Array<number> = [1,2,3];
+  services:Array<Service> = [];
+  nearbySalon:Array<Salon> = [];
+  constructor(private rs:RouterService,private ds:DataService) { 
+      this.ds.getServices().subscribe(
+        (data)=>{
+          this.services = data;
+        }
+      )
+
+      this.ds.getNearbySalon().subscribe(
+        (data)=>{
+          this.nearbySalon = data;
+        }
+      )
+  }
+  
   ngOnInit(): void {
   }
   onNearbySalon(id:any){

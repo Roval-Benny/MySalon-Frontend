@@ -14,6 +14,8 @@ import { RouterService } from './services/router.service';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './services/data.service';
 
 
 @NgModule({
@@ -28,13 +30,15 @@ import { RegistrationComponent } from './registration/registration.component';
     CheckoutComponent,
     HomeComponent,
     SalonListComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [RouterService],
+  providers: [RouterService,
+     DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
