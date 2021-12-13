@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterService } from '../services/router.service';
+
 
 @Component({
   selector: 'app-user-appointments',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserAppointmentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rs:RouterService) { }
 
   ngOnInit(): void {
   }

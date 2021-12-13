@@ -1,11 +1,11 @@
 export class Cart {
     constructor(
-        public id:number,
-        public userId: number,
+        public id:String,
+        public userId: String,
         public serviceName:string,
         public salonName:string,
-        public salonId:number,
-        public price:number,
+        public salonId:string,
+        public price:string,
         public category:Category,
         public image:string
     ){}
