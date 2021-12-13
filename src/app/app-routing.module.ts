@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'salon-list/:id', component: SalonListComponent },
   { path: 'salon-detail/:id', component: SalonDetailComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'checkout', component: CheckoutComponent },
+  { path: 'checkout/:userId', component: CheckoutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'otp', component: OtpComponent },
   { path: 'registration', component: RegistrationComponent },

@@ -3,9 +3,10 @@ export class Appointment {
         public id:number,
         public status:Status,
         public userId: number,
-        public serviceId:number,
-        public salonServiceId:number,
         public salonId:number,
+        public salonName:string,
+        public price:number,
+        public salonAddress:string,
         public category:Category,
         public image:string
     ){}

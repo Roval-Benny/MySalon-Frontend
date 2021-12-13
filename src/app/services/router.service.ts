@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Cart } from '../model/cart';
 
 @Injectable()
 export class RouterService {
@@ -26,8 +27,8 @@ export class RouterService {
     this.router.navigate(['/profile']);
   }
 
-  routeToCheckout(){
-    this.router.navigate(['/checkout']);
+  routeToCheckout(userId:any){
+    this.router.navigate(['/checkout',userId]);
   }
   routeToSalonDetail(id:any){
     this.router.navigate(['/salon-detail',id]);
