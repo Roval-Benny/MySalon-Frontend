@@ -9,13 +9,11 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { HomeComponent } from './home/home.component';
 import { SalonListComponent } from './salon-list/salon-list.component';
 import { FooterComponent } from './footer/footer.component';
-import { UserAppointmentsComponent } from './user-appointments/user-appointments.component';
+import { RouterModule, Routes } from '@angular/router';
+import { RouterService } from './services/router.service';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { AdminSectionComponent } from './admin-section/admin-section.component';
-import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
-
 
 
 @NgModule({
@@ -24,27 +22,19 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
     CartComponent,
     SalonDetailComponent,
     HeaderComponent,
-    CheckoutComponent,
-    SalonListComponent,
-    HomeComponent,
-    FooterComponent,
-    UserAppointmentsComponent,
     LoginComponent,
     OtpComponent,
     RegistrationComponent,
-
-    SalonListComponent,
+    CheckoutComponent,
     HomeComponent,
-    FooterComponent,
-    AdminSectionComponent
-
+    SalonListComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CalendarModule
   ],
-  providers: [],
+  providers: [RouterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
