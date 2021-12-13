@@ -14,6 +14,8 @@ import { RouterService } from './services/router.service';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { RegistrationComponent } from './registration/registration.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [RouterService],
   bootstrap: [AppComponent]
