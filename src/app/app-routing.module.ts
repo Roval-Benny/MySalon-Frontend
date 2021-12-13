@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminSectionComponent } from './admin-section/admin-section.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'salon-detail', component: SalonDetailComponent},
   {path:'login', component: LoginComponent},
   {path: 'otp', component: OtpComponent},
-  {path:'registration', component: RegistrationComponent}
+  {path:'registration', component: RegistrationComponent},
+  {path:'adminpanel', component: AdminSectionComponent}
 ];
 
 @NgModule({
