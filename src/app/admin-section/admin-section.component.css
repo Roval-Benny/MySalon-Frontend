@@ -33,3 +33,21 @@ text-decoration: underline;
     text-align: center;
     color: peru;
 }
+#card-style{
+    border-color: #605959;
+    background: black;
+    margin-left: 14%;
+    padding: 1%;
+}
+.bi-x-circle{
+    color: red;
+    margin-right: 40px;
+
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    display: flex;
+}

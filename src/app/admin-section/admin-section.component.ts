@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RouterService } from '../services/router.service';
 
 @Component({
   selector: 'app-admin-section',
@@ -10,8 +12,7 @@ export class AdminSectionComponent implements OnInit {
     public multiSelect: Boolean = true;
     
 
-  constructor() { }
-
+  constructor(private as:ActivatedRoute,private rs:RouterService) { }
   ngOnInit(): void {
   }
 

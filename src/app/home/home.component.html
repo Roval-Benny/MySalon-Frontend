@@ -27,8 +27,8 @@
             <h4 class="text-start" style="color: white;">Service</h4>
             <div class="colContainer" >
               <div class="card col" *ngFor="let i of n">
-                <img class="card-img-top" src="./assets/img/salon3.jpg" alt="Card image cap">
-                <div class="card-body" style="min-width: fit-content;">
+                <div class="card-body" style="min-width: fit-content;" (click)="onService(i)">
+                  <img class="card-img-top" src="./assets/img/salon3.jpg" alt="Card image cap">
                   <h5 class="card-title" style="min-width: fit-content; margin: 0px;">Hair Cut</h5>
                 </div>
               </div>
@@ -49,8 +49,8 @@
             <h4 class="text-start" style="color: white;">Nearby Salons</h4>
             <div class="colContainer" >
               <div class="card col" *ngFor="let i of n">
-                <img class="card-img-top" src="./assets/img/salon2.jpg" alt="Card image cap">
-                <div class="card-body" style="min-width: fit-content;">
+                <div class="card-body" style="min-width: fit-content;" (click)="onNearbySalon(i)">
+                  <img class="card-img-top" src="./assets/img/salon2.jpg" alt="Card image cap">
                   <h5 class="card-title" style="min-width: fit-content; margin: 0px;">Hair Cut</h5>
                 </div>
               </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Cart } from '../model/cart';
 
 @Component({
   selector: 'app-checkout',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private as:ActivatedRoute) { }
 
   ngOnInit(): void {
+     console.log(this.as.snapshot.paramMap.get('array'));
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterService } from '../services/router.service';
 
 @Component({
   selector: 'app-registration',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private rs:RouterService) { }
 
   ngOnInit(): void {
   }
 
-  successFully(){
-    alert("Registered Successfully!!");
+  onRegister(){
+    this.rs.routeToHome();
   }
 
 }
