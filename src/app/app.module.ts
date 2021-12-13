@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { AdminSectionComponent } from './admin-section/admin-section.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { AdminSectionComponent } from './admin-section/admin-section.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CalendarModule
+    CalendarModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [RouterService],
   bootstrap: [AppComponent]
