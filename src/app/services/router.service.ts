@@ -15,6 +15,10 @@ export class RouterService {
     this.router.navigate(['/home']);
   }
 
+  routeToAdmin(){
+    this.router.navigate(['/adminpanel'])
+  }
+
   routeToLogin(){
     this.router.navigate(['/login']);
   }
