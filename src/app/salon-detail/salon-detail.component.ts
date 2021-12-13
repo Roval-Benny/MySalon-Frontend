@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { SalonService } from '../model/salon-service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-salon-detail',
@@ -8,13 +10,28 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SalonDetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { 
+  salonServiceMen:Array<SalonService> = [];
+  salonServiceWomen:Array<SalonService> = [];
+  salonServiceBoy:Array<SalonService> = [];
+  salonServiceGirl:Array<SalonService> = [];
+
+  constructor(private route: ActivatedRoute,private ds:DataService) { 
     alert(this.route.snapshot.params['id']);
+    this.ds.getSalonService().subscribe(
+      data => {
+        this.salonServiceMen = data.filter(x=>x.category==0);
+        this.salonServiceWomen = data.filter(x=>x.category==1);
+        this.salonServiceBoy = data.filter(x=>x.category==2);
+        this.salonServiceGirl = data.filter(x=>x.category==3);
+
+      }
+    )
   }
-  n:Array<number> = [1,2,3,4,5,6,7,8,9,10];
   ngOnInit(): void {
     
   }
-  
+  onAddService(service:SalonService){
+    this.ds.addToCart(service);
+  }
 
 }

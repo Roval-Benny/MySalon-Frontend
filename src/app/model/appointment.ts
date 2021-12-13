@@ -1,3 +1,5 @@
+import { Time } from "@angular/common";
+
 export class Appointment {
     constructor(
         public id:number,
@@ -8,7 +10,9 @@ export class Appointment {
         public price:number,
         public salonAddress:string,
         public category:Category,
-        public image:string
+        public image:string,
+        public date:string,
+        public time:string,
     ){}
 }
 enum Status{

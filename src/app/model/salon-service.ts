@@ -7,7 +7,9 @@ export class SalonService {
         public offer:number,
         public image:string,
         public category:Category,
-        public serviceId:number
+        public serviceId:number,
+        public salonId:number,
+        public salonName:string
     ){}
 }
 enum Category{
