@@ -16,6 +16,7 @@ import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { DataService } from './services/data.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [RouterService,
      DataService],
