@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 import { CartComponent } from './cart/cart.component';
 import { SalonDetailComponent } from './salon-detail/salon-detail.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +15,10 @@ import { RouterService } from './services/router.service';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './services/data.service';
+import { AdminSectionComponent } from './admin-section/admin-section.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,19 +27,25 @@ import { RegistrationComponent } from './registration/registration.component';
     CartComponent,
     SalonDetailComponent,
     HeaderComponent,
+
     LoginComponent,
+    AdminSectionComponent,
     OtpComponent,
     RegistrationComponent,
     CheckoutComponent,
     HomeComponent,
     SalonListComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CalendarModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [RouterService],
+  providers: [RouterService,
+     DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

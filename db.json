@@ -1,0 +1,96 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Hair Color",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hair Cut",
+      "image": "https://i.pinimg.com/564x/96/45/4e/96454e345720817a0d7f4815c075e265.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hair Style",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Waxing",
+      "image": "https://i.pinimg.com/564x/96/45/4e/96454e345720817a0d7f4815c075e265.jpg"
+    }
+  ],
+  "nearby-salon": [
+    {
+      "id": 1,
+      "name": "Salon 1",
+      "phoneNo": "9876543210",
+      "address": "Kathmandu",
+      "image": "https://i.pinimg.com/564x/2a/c3/9e/2ac39e69a750681eac2710be568c2e5e.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Salon 2",
+      "phoneNo": "9876543210",
+      "address": "Kochi",
+      "image": "https://i.pinimg.com/564x/73/f6/13/73f613ea201556c076204b59dece951a.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Salon 3",
+      "phoneNo": "5645665166",
+      "address": "TVM",
+      "image": "https://i.pinimg.com/564x/5c/da/10/5cda10f382359704148922cb143415f9.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Salon 4",
+      "phoneNo": "9876543210",
+      "address": "Kathmandu",
+      "image": "https://i.pinimg.com/564x/2a/c3/9e/2ac39e69a750681eac2710be568c2e5e.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Salon 5",
+      "phoneNo": "9876543210",
+      "address": "Kochi",
+      "image": "https://i.pinimg.com/564x/73/f6/13/73f613ea201556c076204b59dece951a.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Salon 6",
+      "phoneNo": "5645665166",
+      "address": "TVM",
+      "image": "https://i.pinimg.com/564x/5c/da/10/5cda10f382359704148922cb143415f9.jpg"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "name": "",
+      "age": "",
+      "gender": "",
+      "mobile": "",
+      "email": "",
+      "id": 1
+    },
+    {
+      "name": "Roval",
+      "age": "22",
+      "gender": "Male",
+      "mobile": "9072248097",
+      "email": "rovalbenny@gmail.com",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

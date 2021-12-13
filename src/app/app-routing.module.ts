@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminSectionComponent } from './admin-section/admin-section.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'otp', component: OtpComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'adminpanel', component: AdminSectionComponent},
+  { path: '**', redirectTo: '' },
 ]
 
 @NgModule({
