@@ -15,4 +15,5 @@ export class LoginComponent implements OnInit {
     alert("OTP Sent To Your Mobile Number");
   }
 
+    
 }
