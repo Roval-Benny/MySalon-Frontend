@@ -1,6 +1,6 @@
 export class Salon {
     constructor(
-        public salonId:number,
+        public id:number,
         public name:string,
         public phoneNo:string,
         public address:string,

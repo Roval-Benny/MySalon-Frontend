@@ -32,16 +32,16 @@
       <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
         <span>
           <div class="colContainer" >
-            <div class="card col" *ngFor="let i of n">
-              <img class="card-img-top" src="./assets/img/salon2.jpg" alt="Card image cap">
+            <div class="card col" *ngFor="let i of salonServiceMen">
+              <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Hair Cut</h5>
-                <p class="card-text">Hair cut in any style</p>
+                <h5 class="card-title">{{i.name}}</h5>
+                <p class="card-text">{{i.description}}</p>
                 <div style="display: flex;justify-content: space-around;">
-                  <p class="card-text" style="color: red;">Price:- 250/-</p>
-                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                  <p class="card-text" style="color: red;">Price:- {{i.price}}/-</p>
+                  <p class="card-text" style="color: green;">Offer:- {{i.offer}}%</p>
                 </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" (click)="onAddService(i)">
                   Add Service
                 </button>
               </div>
@@ -53,16 +53,16 @@
       <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
         <span>
           <div class="colContainer" >
-            <div class="card col" *ngFor="let i of n">
-              <img class="card-img-top" src="./assets/img/salon3.jpg" alt="Card image cap">
+            <div class="card col" *ngFor="let i of salonServiceWomen">
+              <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Hair Cut</h5>
-                <p class="card-text">Hair cut in any style</p>
+                <h5 class="card-title">{{i.name}}</h5>
+                <p class="card-text">{{i.description}}</p>
                 <div style="display: flex;justify-content: space-around;">
-                  <p class="card-text" style="color: red;">Price:- 250/-</p>
-                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                  <p class="card-text" style="color: red;">Price:- {{i.price}}/-</p>
+                  <p class="card-text" style="color: green;">Offer:- {{i.offer}}%</p>
                 </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" (click)="onAddService(i)">
                   Add Service
                 </button>
               </div>
@@ -73,16 +73,16 @@
       <div class="tab-pane fade" id="pills-boy" role="tabpanel" aria-labelledby="pills-boy-tab">
         <span>
           <div class="colContainer" >
-            <div class="card col" *ngFor="let i of n">
-              <img class="card-img-top" src="./assets/img/salon4.jpg" alt="Card image cap">
+            <div class="card col" *ngFor="let i of salonServiceBoy">
+              <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Hair Cut</h5>
-                <p class="card-text">Hair cut in any style</p>
+                <h5 class="card-title">{{i.name}}</h5>
+                <p class="card-text">{{i.description}}</p>
                 <div style="display: flex;justify-content: space-around;">
-                  <p class="card-text" style="color: red;">Price:- 250/-</p>
-                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                  <p class="card-text" style="color: red;">Price:- {{i.price}}/-</p>
+                  <p class="card-text" style="color: green;">Offer:- {{i.offer}}%</p>
                 </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" (click)="onAddService(i)">
                   Add Service
                 </button>
               </div>
@@ -93,16 +93,16 @@
       <div class="tab-pane fade" id="pills-girl" role="tabpanel" aria-labelledby="pills-girl-tab">
         <span>
           <div class="colContainer" >
-            <div class="card col" *ngFor="let i of n">
-              <img class="card-img-top" src="./assets/img/salon1.jpg" alt="Card image cap">
+            <div class="card col" *ngFor="let i of salonServiceGirl">
+              <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Hair Cut</h5>
-                <p class="card-text">Hair cut in any style</p>
+                <h5 class="card-title">{{i.name}}</h5>
+                <p class="card-text">{{i.description}}</p>
                 <div style="display: flex;justify-content: space-around;">
-                  <p class="card-text" style="color: red;">Price:- 250/-</p>
-                  <p class="card-text" style="color: green;">Offer:- 12%</p>
+                  <p class="card-text" style="color: red;">Price:- {{i.price}}/-</p>
+                  <p class="card-text" style="color: green;">Offer:- {{i.offer}}%</p>
                 </div>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" (click)="onAddService(i)">
                   Add Service
                 </button>
               </div>
