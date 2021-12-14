@@ -28,7 +28,7 @@
             <div class="colContainer" >
               <div class="card col" *ngFor="let s of services">
                 <div class="card-body" (click)="onService(s.id)">
-                  <img class="card-img-top" src="{{s.image}}" alt="Card image cap" style="width: 25vw;height: 25vw;">
+                  <!-- <img class="card-img-top" src="{{s.image}}" alt="Card image cap" style="width: 25vw;height: 25vw;"> -->
                   <h5 class="card-title" style="margin: 0px;">{{s.name}}</h5>
                 </div>
               </div>
@@ -37,11 +37,19 @@
           <div class="col-md-12">
             <h4 class="text-start" style="color: white;">Today's Deals</h4>
             <div class="colContainer" >
-              <div class="card col" *ngFor="let i of n">
-                <img class="card-img-top" src="./assets/img/salon4.jpg" alt="Card image cap">
+              <div class="card col" *ngFor="let i of todaysDeal">
                 <div class="card-body" style="min-width: fit-content;">
-                  <h5 class="card-title" style="min-width: fit-content; margin: 0px;">Hair Cut</h5>
+                  <img class="card-img-top" src="{{i.image}}" alt="Card image cap" style="width: 15vw;height: 15vw;">
+                  <h5 class="card-title" style="min-width: fit-content; margin: 0px;">{{i.name}}</h5>
+                  <p class="card-text" style="min-width: fit-content;">{{i.description}}</p>
+                  <p class="card-text" style="min-width: fit-content;">{{i.salonName}}</p>
+                  <p class="card-text" style="min-width: fit-content;">Price:-{{i.price}}</p>
+                  <p class="card-text" style="min-width: fit-content;">Date:-{{todaysDate}}</p>
+                  <p class="card-text" style="min-width: fit-content;color: green;">Offer:-{{i.offer}}%</p>
                 </div>
+                <button class="btn btn-primary" (click)="onAddService(i)">
+                  Add Service
+                </button>
               </div>
             </div>
           </div>
@@ -49,8 +57,8 @@
             <h4 class="text-start" style="color: white;">Nearby Salons</h4>
             <div class="colContainer" >
               <div class="card col" *ngFor="let i of nearbySalon">
-                <div class="card-body" style="min-width: fit-content;" (click)="onNearbySalon(i)">
-                  <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
+                <div class="card-body" style="min-width: fit-content;" (click)="onNearbySalon(i.id)">
+                  <img class="card-img-top" src="{{i.image}}" alt="Card image cap" style="width: 15vw;height: 15vw;">
                   <h5 class="card-title" style="min-width: fit-content; margin: 0px;">{{i.name}}</h5>
                   <h6 class="card-title" style="min-width: fit-content; margin: 0px;">{{i.phoneNo}}</h6>
                 </div>

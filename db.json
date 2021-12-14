@@ -65,6 +65,233 @@
       "image": "https://i.pinimg.com/564x/5c/da/10/5cda10f382359704148922cb143415f9.jpg"
     }
   ],
+  "todays-deal": [
+    {
+      "id": 1,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    }
+  ],
+  "salon-service": [
+    {
+      "id": 1,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 0,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 2,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 3,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 0,
+      "serviceId": 1,
+      "salonId": 2,
+      "salonName": "Salon 2",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 2,
+      "salonName": "Salon 2",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 0,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "date": "21-12-2021"
+    },
+    {
+      "id": 3,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "date": "14-12-2021"
+    },
+    {
+      "id": 4,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "date": "14-12-2021"
+    },
+    {
+      "id": 5,
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "date": "14-12-2021"
+    },
+    {
+      "id": 6,
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "date": "14-12-2021"
+    }
+  ],
   "posts": [
     {
       "id": 1,

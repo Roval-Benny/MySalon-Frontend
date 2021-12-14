@@ -3,11 +3,11 @@
         <p>Top salon's near by you</p>
 </div>
 <div class="colContainer" >
-  <div class="card col" *ngFor="let i of n">
-    <div class="card-body" (click)="onSalon(i)">
-      <img class="card-img-top" src="../../assets/img/lakme.jpeg" alt="Card image cap">
-      <h5 class="card-title">Lakme Salon</h5>
-      <p class="card-text">1500+ orders placed from here today</p>
+  <div class="card col" *ngFor="let i of salon">
+    <div class="card-body" (click)="onSalon(i.id)">
+      <img class="card-img-top" src="{{i.image}}" alt="Card image cap"  style="width: 15vw;height: 15vw;">
+      <h5 class="card-title">{{i.name}}</h5>
+      <p class="card-text">{{i.address}}</p>
       <div style="display: flex;justify-content: space-around;">
       </div>
     </div>

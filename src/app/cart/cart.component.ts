@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cart } from '../model/cart';
+import { SalonService } from '../model/salon-service';
+import { DataService } from '../services/data.service';
 import { RouterService } from '../services/router.service';
 
 @Component({
@@ -8,10 +10,14 @@ import { RouterService } from '../services/router.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  c:Cart=new Cart("","","","","","",2,"");
-  cartarray:Array<Cart>=[new Cart("1","1","haircut","stylesalon","101","500",2,"")]
-  constructor(private rs:RouterService) { }
+  service:Array<SalonService>=[];
+  constructor(private rs:RouterService,private ds:DataService) { }
   ngOnInit(): void {
+    this.ds.getCart().subscribe(
+      data=>{
+        this.service=data;
+      }
+    );
   }
 
   onCheckout(){

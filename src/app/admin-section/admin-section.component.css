@@ -9,25 +9,12 @@ text-align: center;
 color: burlywood;
 text-decoration: underline;
 }
-.sub-section2{
-    margin-bottom: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 70px;
-}
-.sub-section1{
-    display: flex;
-}
-.form-switch{
-    margin-left: 30px;
-}
-.service{
-    border: 1px solid #d4ead5;
-    padding: 10px;
-}
+.mb-3{
+    width: 90vw;
+    border-radius: 10px;
+;}
 .service-header{
     color:palevioletred;
-    text-decoration: underline;
 }
 .Appointment-header{
     text-align: center;
@@ -50,4 +37,8 @@ text-decoration: underline;
 }
 .container2{
     display: flex;
+}
+.card-text{
+    display: flex;
+    justify-content: space-evenly;
 }
