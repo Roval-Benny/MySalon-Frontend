@@ -213,47 +213,7 @@
       "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
     }
   ],
-  "cart": [
-    {
-      "name": "Hair Color",
-      "description": "Hair Color description",
-      "price": 1000,
-      "offer": 10,
-      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
-      "category": 1,
-      "serviceId": 1,
-      "salonId": 1,
-      "salonName": "Salon 1",
-      "date": "14-12-2021",
-      "id": 1
-    },
-    {
-      "name": "Hair Color",
-      "description": "Hair Color description",
-      "price": 1000,
-      "offer": 10,
-      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
-      "category": 1,
-      "serviceId": 1,
-      "salonId": 1,
-      "salonName": "Salon 1",
-      "date": "14-12-2021",
-      "id": 2
-    },
-    {
-      "name": "Hair Cut",
-      "description": "Hair Cut description",
-      "price": 200,
-      "offer": 10,
-      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
-      "category": 0,
-      "serviceId": 5,
-      "salonId": 2,
-      "salonName": "Salon 2",
-      "date": "29-12-2021",
-      "id": 3
-    }
-  ],
+  "cart": [],
   "posts": [
     {
       "id": 1,

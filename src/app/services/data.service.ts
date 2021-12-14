@@ -39,8 +39,8 @@ export class DataService {
    getSalonService():Observable<Array<SalonService>>{
       return this.httpClient.get<Array<SalonService>>("http://localhost:3000/salon-service")
    }
-   getCart():Observable<Array<SalonService>>{
-      return this.httpClient.get<Array<SalonService>>("http://localhost:3000/cart")
+   getCart():Observable<Array<Cart>>{
+      return this.httpClient.get<Array<Cart>>("http://localhost:3000/cart")
    }
    addToCart(cart:Cart){
       this.httpClient.post<Cart>("http://localhost:3000/cart",cart).subscribe(
@@ -48,6 +48,15 @@ export class DataService {
             this.cart.push(data);
             this.cartSubject.next(this.cart);
             alert("Added to cart");
+         }
+      )
+   }
+   removeFromCart(cart:Cart){
+      this.httpClient.delete<Cart>("http://localhost:3000/cart/"+cart.id).subscribe(
+         data=>{
+            this.cart = this.cart.filter(c=>c.id!=cart.id);
+            this.cartSubject.next(this.cart);
+            alert("Removed from cart");
          }
       )
    }

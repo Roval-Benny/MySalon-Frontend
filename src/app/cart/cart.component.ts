@@ -10,12 +10,12 @@ import { RouterService } from '../services/router.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  service:Array<SalonService>=[];
+  cart:Array<Cart>=[];
   constructor(private rs:RouterService,private ds:DataService) { }
   ngOnInit(): void {
     this.ds.getCart().subscribe(
       data=>{
-        this.service=data;
+        this.cart=data;
       }
     );
   }
@@ -23,7 +23,8 @@ export class CartComponent implements OnInit {
   onCheckout(){
     this.rs.routeToCheckout(1);
   }
-  delete(){
-    alert("delete");
+  delete(cart:Cart){
+    this.ds.removeFromCart(cart);
+    this.cart = this.cart.filter(i => i.id !== cart.id);
   }
 }
