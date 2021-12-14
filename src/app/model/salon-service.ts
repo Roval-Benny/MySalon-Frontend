@@ -12,8 +12,6 @@ export class SalonService {
         public serviceId:number,
         public salonId:number,
         public salonName:string,
-        public date:string,
-        public time:string
     ){}
 }
 enum Category{

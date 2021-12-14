@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { Cart } from '../model/cart';
 import { Salon } from '../model/salon';
 import { SalonService } from '../model/salon-service';
 import { Service } from '../model/service';
@@ -18,8 +19,8 @@ export class DataService {
   todayDealSubject:BehaviorSubject<Array<SalonService>> = new BehaviorSubject(this.todaysDeal);
   salonService: Array<SalonService> = [];
   salonServiceSubject:BehaviorSubject<Array<SalonService>> = new BehaviorSubject(this.salonService);
-  cart:Array<SalonService> = [];
-  cartSubject:BehaviorSubject<Array<SalonService>> = new BehaviorSubject(this.cart);
+  cart:Array<Cart> = [];
+  cartSubject:BehaviorSubject<Array<Cart>> = new BehaviorSubject(this.cart);
   constructor(private httpClient:HttpClient) {
       this.getCart().subscribe(data=>{
          this.cart = data;
@@ -41,9 +42,8 @@ export class DataService {
    getCart():Observable<Array<SalonService>>{
       return this.httpClient.get<Array<SalonService>>("http://localhost:3000/cart")
    }
-   addToCart(salonService:SalonService){
-      salonService.id = this.cart.length+1;
-      this.httpClient.post<SalonService>("http://localhost:3000/cart",salonService).subscribe(
+   addToCart(cart:Cart){
+      this.httpClient.post<Cart>("http://localhost:3000/cart",cart).subscribe(
          data=>{
             this.cart.push(data);
             this.cartSubject.next(this.cart);

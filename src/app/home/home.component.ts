@@ -1,5 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Cart } from '../model/cart';
 import { Salon } from '../model/salon';
 import { SalonService } from '../model/salon-service';
 import { Service } from '../model/service';
@@ -47,8 +48,18 @@ export class HomeComponent implements OnInit {
   onService(id:any){
     this.rs.routeToSalonList(id);
   }
-  onAddService(salonService:SalonService){
-    if(this.todaysDate) salonService.date = this.todaysDate;
-    this.ds.addToCart(salonService);
+  onAddService(service:SalonService){
+    let cart: Cart = new Cart();
+    cart.name = service.name;
+    cart.description = service.description;
+    cart.price = service.price;
+    cart.offer = service.offer;
+    cart.image = service.image;
+    cart.category = service.category;
+    cart.serviceId = service.id;
+    cart.salonId = service.salonId;
+    cart.salonName = service.salonName;
+    if(this.todaysDate) cart.date = this.todaysDate;
+    this.ds.addToCart(cart);
   }
 }

@@ -2,6 +2,7 @@ import { DatePipe } from '@angular/common';
 import { Component, ElementRef, Injector, Input, OnInit, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Calendar, CalendarComponent } from '@syncfusion/ej2-angular-calendars';
+import { Cart } from '../model/cart';
 import { SalonService } from '../model/salon-service';
 import { DataService } from '../services/data.service';
 
@@ -43,16 +44,26 @@ onChange(args:any) {
     console.log( "args " + args.value);
 }
   onAddService(service:SalonService){
+    let cart: Cart = new Cart();
+    cart.name = service.name;
+    cart.description = service.description;
+    cart.price = service.price;
+    cart.offer = service.offer;
+    cart.image = service.image;
+    cart.category = service.category;
+    cart.serviceId = service.id;
+    cart.salonId = service.salonId;
+    cart.salonName = service.salonName;
     let date = this.formater.transform(this.value, 'dd-MM-yyyy');
     if(date){
-      service.date = date;
+     cart.date =  date;
     }
     //this.calender.value = this.value;
-    console.log("Date picker "+date);
+    console.log("Date picker "+cart.date);
     //service.date = this.value.toLocaleDateString();
-    console.log(service.date);
+    //console.log(service.date);
     console.log(service);
-    this.ds.addToCart(service);
+    this.ds.addToCart(cart);
   }
 
 }
