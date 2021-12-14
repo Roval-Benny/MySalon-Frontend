@@ -18,7 +18,13 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
 import { AdminSectionComponent } from './admin-section/admin-section.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth'
+import 'firebase/compat/firestore'
+
+
+import { environment } from 'src/environments/environment';
 
 
 @NgModule({
@@ -42,7 +48,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     CalendarModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+   FormsModule
   ],
   providers: [RouterService,
      DataService],

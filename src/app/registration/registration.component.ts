@@ -3,12 +3,15 @@ import { RouterService } from '../services/router.service';
 import {FormGroup, FormBuilder} from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
+
+ 
 
   public signupForm !:FormGroup;
   constructor(private rs:RouterService, private formBuilder : FormBuilder, private http: HttpClient) { }
@@ -34,4 +37,5 @@ export class RegistrationComponent implements OnInit {
   //   this.rs.routeToHome();
   // }
 
+ 
 }
