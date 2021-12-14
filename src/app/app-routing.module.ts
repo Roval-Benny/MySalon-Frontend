@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'checkout/:userId', component: CheckoutComponent },
   { path: 'login', component: LoginComponent },
   { path: 'otp', component: OtpComponent },
-  { path: 'registration', component: RegistrationComponent },
+  { path: 'registration/:phone', component: RegistrationComponent },
   { path: 'adminpanel', component: AdminSectionComponent},
   { path: '**', redirectTo: '' },
 ]

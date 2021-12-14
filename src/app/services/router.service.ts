@@ -40,4 +40,7 @@ export class RouterService {
   routeToSalonList(id:any){
     this.router.navigate(['/salon-list',id]);
   }
+  routeToRegistration(phone:string){
+    this.router.navigate(['/registration',phone]);
+  }
 }

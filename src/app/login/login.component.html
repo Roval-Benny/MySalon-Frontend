@@ -12,11 +12,11 @@
           <div [hidden]="user" class="mt-5">
             
             <div class="text-center">
-            <label for="phone" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Phone Number (Ex: 91-987-654-3210)</label><br></div>
+            <label for="phone" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">Phone Number (Ex: 91-9876543210)</label><br></div>
             <input type="text" [(ngModel)]="phoneNumber.country"  class="input" placeholder="91"    maxlength="2">
-            <input type="text" [(ngModel)]="phoneNumber.area"     class="input" placeholder="987"  maxlength="3">
-            <input type="text" [(ngModel)]="phoneNumber.prefix"   class="input" placeholder="654"  maxlength="3">
-            <input type="text" [(ngModel)]="phoneNumber.line"     class="input" placeholder="3210" maxlength="4">
+            <input type="text" [(ngModel)]="phoneNumber.number"     class="input" placeholder="9999999999"  maxlength="10">
+            <!-- <input type="text" [(ngModel)]="phoneNumber.prefix"   class="input" placeholder="654"  maxlength="3">
+            <input type="text" [(ngModel)]="phoneNumber.line"     class="input" placeholder="3210" maxlength="4"> -->
           
             <div id="recaptcha-container" class="mt-3"></div>
           <div class="text-center">

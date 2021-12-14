@@ -5,6 +5,7 @@ import { Cart } from '../model/cart';
 import { Salon } from '../model/salon';
 import { SalonService } from '../model/salon-service';
 import { Service } from '../model/service';
+import { User } from '../model/user';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,7 @@ export class DataService {
   salonServiceSubject:BehaviorSubject<Array<SalonService>> = new BehaviorSubject(this.salonService);
   cart:Array<Cart> = [];
   cartSubject:BehaviorSubject<Array<Cart>> = new BehaviorSubject(this.cart);
+  user:User = new User();
   constructor(private httpClient:HttpClient) {
       this.getCart().subscribe(data=>{
          this.cart = data;
@@ -60,5 +62,30 @@ export class DataService {
          }
       )
    }
-
+   getUserByPhone(phone:string):Observable<User>{
+      return this.httpClient.get<User>("http://localhost:3000/user/"+phone);
+   }
+   checkUserIsPresent(phone:string):Promise<Boolean>{
+         let user:Array<User> ;
+        return this.httpClient.get<Array<User>>("http://localhost:3000/user").toPromise().then(
+            data=>{
+               user = data;
+               if(user.find(u=>u.phoneNo==phone)){
+                  return true;
+               }else{
+                  return false;
+               }
+            }
+         )
+   }
+   addUser(user:User):Promise<Boolean>{
+      return this.httpClient.post<User>("http://localhost:3000/user",user).toPromise().then(
+         data=>{
+            return true;
+         },
+         error=>{
+            return false;
+         }
+      )
+   }
 }

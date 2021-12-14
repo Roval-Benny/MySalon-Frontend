@@ -5,16 +5,18 @@ import 'firebase/compat/firestore'
 import {Router} from '@angular/router';
 import { environment } from 'src/environments/environment';
 import {WindowService} from '../model/window.service'
+import { DataService } from '../services/data.service';
+import { RouterService } from '../services/router.service';
 
 export class PhoneNumber {
   country: string ='';
-  area: string ='';
+  number: string ='';
   prefix: string ='';
   line: string ='';
 
   // format phone numbers as E.164
   get e164() {
-    const num = this.country + this.area + this.prefix + this.line
+    const num = this.country + this.number 
     return `+${num}`
   }
 
@@ -38,7 +40,7 @@ export class LoginComponent implements OnInit {
   user: any;
   
   
-  constructor(private win: WindowService) { }
+  constructor(private win: WindowService,private ds:DataService,private rs:RouterService) { }
 
   ngOnInit() {
     firebase.initializeApp(environment.firebase);
@@ -72,7 +74,27 @@ export class LoginComponent implements OnInit {
                   .confirm(this.verificationCode)
                   .then( (result: { user: any; }) => {
 
-                    this.user = result.user;
+                    //this.user = result.user;
+                    console.log(this.phoneNumber.e164);
+                    // this.ds.getUserByPhone(this.phoneNumber.e164).subscribe(
+                    //   (data:any)=>{
+                    //     this.user = data;
+                    //     this.rs.routeToHome();
+                    //   },
+                    //   (error:any)=>{
+                    //     console.log(error);
+                    //     this.rs.routeToRegistration(this.phoneNumber.e164+' '+result.user);
+                    //   }
+                    // )
+                    this.ds.checkUserIsPresent(this.phoneNumber.e164).then(
+                      (data:any)=>{
+                        if(data){
+                          this.rs.routeToHome();
+                        }else{
+                          this.rs.routeToRegistration(this.phoneNumber.e164+' '+result.user['userId']);
+                        }
+                      }
+                    )
 
     })
     .catch( (error: any) =>{

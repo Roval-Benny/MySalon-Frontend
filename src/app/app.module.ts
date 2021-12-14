@@ -35,7 +35,6 @@ import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CartComponent,
     SalonDetailComponent,
     HeaderComponent,
-
     LoginComponent,
     AdminSectionComponent,
     OtpComponent,
@@ -51,7 +50,7 @@ import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CalendarModule,
     ReactiveFormsModule,
     HttpClientModule,
-   FormsModule,
+    FormsModule,
     NgbModule
   ],
   providers: [RouterService,

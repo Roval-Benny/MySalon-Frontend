@@ -213,7 +213,34 @@
       "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "Hair Color",
+      "description": "Hair Color description",
+      "price": 1000,
+      "offer": 10,
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "category": 1,
+      "serviceId": 1,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "date": "14-12-2021",
+      "id": 1
+    },
+    {
+      "name": "Hair Cut",
+      "description": "Hair Cut description",
+      "price": 200,
+      "offer": 10,
+      "image": "https://content.latest-hairstyles.com/wp-content/uploads/caramel-highlights-1.jpg",
+      "category": 1,
+      "serviceId": 2,
+      "salonId": 1,
+      "salonName": "Salon 1",
+      "date": "14-12-2021",
+      "id": 2
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -221,30 +248,13 @@
       "author": "typicode"
     }
   ],
-  "signupUsers": [
+  "user": [
     {
-      "name": "",
-      "age": "",
-      "gender": "",
-      "mobile": "",
-      "email": "",
+      "name": "Roval Benny",
+      "ageCategory": 1,
+      "phoneNo": "+919072248097",
+      "userId": "[object",
       "id": 1
-    },
-    {
-      "name": "Roval",
-      "age": "22",
-      "gender": "Male",
-      "mobile": "9072248097",
-      "email": "rovalbenny@gmail.com",
-      "id": 2
-    },
-    {
-      "name": "yasho",
-      "age": "",
-      "gender": "",
-      "mobile": "",
-      "email": "",
-      "id": 3
     }
   ],
   "profile": {
