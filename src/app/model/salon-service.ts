@@ -1,3 +1,5 @@
+import { Time } from "@angular/common";
+
 export class SalonService {
     constructor(
         public id:number,
@@ -9,7 +11,9 @@ export class SalonService {
         public category:Category,
         public serviceId:number,
         public salonId:number,
-        public salonName:string
+        public salonName:string,
+        public date:string,
+        public time:string
     ){}
 }
 enum Category{

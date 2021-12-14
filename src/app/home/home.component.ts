@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Salon } from '../model/salon';
 import { SalonService } from '../model/salon-service';
@@ -14,6 +15,9 @@ export class HomeComponent implements OnInit {
 
   n:Array<number> = [1,2,3];
   services:Array<Service> = [];
+  formater:DatePipe = new DatePipe('en-US');
+  date :Date = new Date(Date.now());
+  todaysDate = this.formater.transform(this.date, 'dd-MM-yyyy')?.toString();
   nearbySalon:Array<Salon> = [];
   todaysDeal:Array<SalonService> = [];
   constructor(private rs:RouterService,private ds:DataService) { 
@@ -44,6 +48,7 @@ export class HomeComponent implements OnInit {
     this.rs.routeToSalonList(id);
   }
   onAddService(salonService:SalonService){
+    if(this.todaysDate) salonService.date = this.todaysDate;
     this.ds.addToCart(salonService);
   }
 }

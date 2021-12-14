@@ -4,6 +4,7 @@ export class Salon {
         public name:string,
         public phoneNo:string,
         public address:string,
-        public image:string
+        public image:string,
+        public location:string
         ){}
 }

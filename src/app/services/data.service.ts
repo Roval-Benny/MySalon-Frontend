@@ -42,10 +42,12 @@ export class DataService {
       return this.httpClient.get<Array<SalonService>>("http://localhost:3000/cart")
    }
    addToCart(salonService:SalonService){
+      salonService.id = this.cart.length+1;
       this.httpClient.post<SalonService>("http://localhost:3000/cart",salonService).subscribe(
          data=>{
             this.cart.push(data);
             this.cartSubject.next(this.cart);
+            alert("Added to cart");
          }
       )
    }

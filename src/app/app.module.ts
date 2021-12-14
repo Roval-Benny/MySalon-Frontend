@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
 import { AdminSectionComponent } from './admin-section/admin-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -42,10 +43,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     CalendarModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [RouterService,
-     DataService],
+     DataService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

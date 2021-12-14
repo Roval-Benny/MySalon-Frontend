@@ -9,9 +9,8 @@ import { RouterService } from '../services/router.service';
 })
 export class AdminSectionComponent implements OnInit {
   public value: Date [] = [new Date ("12/16/2021")]  
-    public multiSelect: Boolean = true;
+  public multiSelect: Boolean = true;
     
-
   constructor(private as:ActivatedRoute,private rs:RouterService) { }
   ngOnInit(): void {
   }
