@@ -18,7 +18,6 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
 import { AdminSectionComponent } from './admin-section/admin-section.component';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'
@@ -26,10 +25,8 @@ import 'firebase/compat/firestore'
 
 
 import { environment } from 'src/environments/environment';
-=======
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
->>>>>>> 2207024d6de53ba6f9da6dd78f8a3cee7a88facb
 
 
 @NgModule({
@@ -54,11 +51,8 @@ import { NgbCalendar, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CalendarModule,
     ReactiveFormsModule,
     HttpClientModule,
-<<<<<<< HEAD
-   FormsModule
-=======
+   FormsModule,
     NgbModule
->>>>>>> 2207024d6de53ba6f9da6dd78f8a3cee7a88facb
   ],
   providers: [RouterService,
      DataService,],
